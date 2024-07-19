@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sruthiGarikipati/portfolio.git/static/css/main.0c723043.css",
+    "main.js": "/sruthiGarikipati/portfolio.git/static/js/main.c8fd213e.js",
+    "static/media/picc.jpg": "/sruthiGarikipati/portfolio.git/static/media/picc.5bd8f58e90ec21dad6b2.jpg",
+    "static/media/pro.jpg": "/sruthiGarikipati/portfolio.git/static/media/pro.cc3ea7cf41093697e24e.jpg",
+    "static/media/ai.jpg": "/sruthiGarikipati/portfolio.git/static/media/ai.8652a9157d92115e0bd7.jpg",
+    "static/media/Shop.jpg": "/sruthiGarikipati/portfolio.git/static/media/Shop.4e23293cf4b597d2e121.jpg",
+    "index.html": "/sruthiGarikipati/portfolio.git/index.html",
+    "main.0c723043.css.map": "/sruthiGarikipati/portfolio.git/static/css/main.0c723043.css.map",
+    "main.c8fd213e.js.map": "/sruthiGarikipati/portfolio.git/static/js/main.c8fd213e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c723043.css",
+    "static/js/main.c8fd213e.js"
+  ]
+}
