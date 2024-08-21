@@ -60,7 +60,8 @@ const Projects = () => {
         </a>
       </section>
 
-      {/* Footer */}
+      {/* Fo
+      oter */}
       <footer className='bg-white dark:bg-gradient-to-tr from-[#0235a3] via-[#030a1c] to-[#05174e] text-black dark:text-white py-8'>
         <div className='container mx-auto text-center'>
           <p>&copy; {new Date().getFullYear()} Sruthi Garikipati. All rights reserved.</p>

@@ -9,4 +9,16 @@ body {
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top right, #0235a3, #030a1c, #05174e); /* Creates the gradient background */
+  color: #fff; /* Sets the default text color to white */
+}

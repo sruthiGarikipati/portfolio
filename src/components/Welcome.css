@@ -1,0 +1,18 @@
+
+
+  .welcome-container {
+    color: #fff; /* Sets the text color to white */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds some padding */
+    align-items: center;
+    min-height: 100vh; /* Ensures it takes up at least the full viewport height */
+  }
+  
+  .welcome-container h1,
+  .welcome-container p {
+    margin: 0; /* Ensures no extra margin */
+    color: #fff; /* Ensures that headings and paragraphs are white */
+  }
+  
+  
+  

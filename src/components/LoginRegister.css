@@ -1,0 +1,326 @@
+/* Container for login/register forms */
+.wrapper {
+    position: fixed; /* Fixed positioning to keep it in place */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Center the wrapper */
+    width: 420px;
+    height: 600px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Style for both forms */
+.form-box {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Allow the form to be scrollable */
+    max-height: 100%; /* Ensure it doesn't exceed the wrapper */
+}
+
+/* Position and transition for forms */
+.wrapper .login {
+    transform: translateX(0);
+}
+
+.wrapper.active .login {
+    transform: translateX(-100%);
+}
+
+.wrapper .register {
+    transform: translateX(100%);
+}
+
+.wrapper.active .register {
+    transform: translateX(0);
+}
+
+/* General form styling */
+form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Specific adjustment for sign-up heading */
+.register form h1 {
+    margin-top: 40px; /* Adjust this value as needed */
+    margin-bottom: 20px; /* Ensure consistent bottom margin */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 45px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* LoginRegister.css */
+
+.remember-forgot {
+    display: flex;
+ justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .remember-forgot label {
+    color: #ffffff; /* White text */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    
+  }
+  .remember-forgot label input {
+    margin-right: 8px; /* Add some space between the checkbox and the text */
+  }
+  
+  
+  .forgot-password-link {
+    color: #ffffff; /* White text */
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline; /* Underline the text */
+    padding: 0; /* Remove any default padding */
+  }
+  
+ 
+  
+form button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/* Style for the register link */
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for password instructions */
+.password-instructions {
+    margin-bottom: 20px;
+}
+
+.password-instructions p {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.password-instructions p::before {
+    content: '✓'; /* Checkmark icon */
+    color: transparent;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.password-instructions p.valid::before {
+    color: green;
+}
+
+.password-instructions p.invalid::before {
+    color: red;
+}
+
+/* Ensures all white text is styled */
+.white-text {
+    color: white;
+}
+
+/* Ensures consistent styling for messages and links */
+.message.error, .register-link button, .remember-forgot a {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.message.error {
+    color: red; /* Make sure the text color contrasts with the background */
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Style for the Upload Photo input and label */
+.upload-photo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Gap between upload photo button and the agreement text */
+}
+
+.upload-photo input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.upload-photo label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload-photo .file-name {
+    margin-top: 5px; /* Space between the button and the file name */
+    font-size: 14px;
+    color: #fff; /* Light color for file name */
+}
+
+/* Adjust spacing for the 'I agree to' section */
+.remember-forgot {
+    margin-top: 20px; /* Ensure there is a gap between the Upload Photo section and this section */
+    margin-bottom: 30px; /* Add space below the checkbox if needed */
+}
+
+.remember-forgot label {
+    font-size: 14px;
+}
+
+/* Style for the photo preview container */
+.photo-preview {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Aligns the image and the close button to the right */
+    margin-top: 10px; /* Space between the file name and the preview image */
+}
+
+/* Style for the preview image */
+.preview-img {
+    max-width: 90px; /* Set a maximum width for the preview image */
+    max-height: 90px; /* Set a maximum height for the preview image */
+    border-radius: 4px;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    border: 1px solid #666;
+}
+
+/* Style for the remove button */
+.remove-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px; /* Add some margin to keep the button away from the edges */
+}
+
+.remove-photo:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.photo-preview {
+    margin-top: 10px;
+  }
+  
+  .photo-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .scrollable-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scroll if not needed */
+    white-space: nowrap; /* Prevent the form from wrapping */
+    width: 100%; /* Full width of its parent */
+  }
+  
+  /* Align the form to the right end of the container */
+  .scrollable-form {
+    display: inline-block; /* Allow horizontal alignment */
+    min-width: 100%; /* Ensure the form takes at least the full width */
+    text-align: right; /* Align content to the right */
+  }
+
+
+
+
